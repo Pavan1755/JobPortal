@@ -11,10 +11,12 @@ import path from "path";
 
 const getDataUri = (file) => {
     if (!file || !file.originalname) {
-        throw new Error("File or originalname is undefined.");
+        // If file is not present, return null or handle it as needed
+        return null;
     }
     const parser = new DataUriParser();
     const extName = path.extname(file.originalname).toString();
     return parser.format(extName, file.buffer);
 }
+
 export default getDataUri;
