@@ -129,6 +129,7 @@ const CompanySetup = () => {
                                 type="file"
                                 accept="image/*"
                                 onChange={changeFileHandler}
+                                required
                             />
                         </div>
                     </div>
