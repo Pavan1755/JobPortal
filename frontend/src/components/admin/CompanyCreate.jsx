@@ -21,7 +21,7 @@ const CompanyCreate = () => {
                     'Content-Type':'application/json',
                     // 'Authorization': `Bearer ${token}`, // Add the token here
                 },
-                withCredentials:true
+                // withCredentials:true
             });
             if(res?.data?.success){
                 dispatch(setSingleCompany(res.data.company));
