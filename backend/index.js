@@ -18,7 +18,8 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
     // origin:'http://localhost:5173',
-    origin:'https://jobportal-hqlg.onrender.com',
+    // origin:'https://jobportal-hqlg.onrender.com',
+    origin:'https://magnificent-marzipan-7d926f.netlify.app/',
     credentials:true
 }
 // const corsOptions = {
