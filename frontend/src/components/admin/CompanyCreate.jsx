@@ -9,7 +9,7 @@ import { COMPANY_API_END_POINT } from '@/utils/constant'
 import { toast } from 'sonner'
 import { useDispatch } from 'react-redux'
 import { setSingleCompany } from '@/redux/companySlice'
-const token = localStorage.getItem('token');
+// const token = localStorage.getItem('token');
 const CompanyCreate = () => {
     const navigate = useNavigate();
     const [companyName, setCompanyName] = useState();
@@ -19,7 +19,7 @@ const CompanyCreate = () => {
             const res = await axios.post(`${COMPANY_API_END_POINT}/register`, {companyName}, {
                 headers:{
                     'Content-Type':'application/json',
-                    'Authorization': `Bearer ${token}`, // Add the token here
+                    // 'Authorization': `Bearer ${token}`, // Add the token here
                 },
                 withCredentials:true
             });
